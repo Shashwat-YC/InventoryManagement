@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_style">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="90dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_divider_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/spare_part"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="#F6FBFF"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4">
+
+        <TextView
+            android:id="@+id/tv_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/floor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_floor_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,TextFields" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/area"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_area_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxWidth="120sp"
+            android:maxLines="1"
+            android:minWidth="100sp"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,TextFields" />
+
+        <TextView
+            android:id="@+id/tv_rack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/rack"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_rack_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,TextFields" />
+
+        <TextView
+            android:id="@+id/tv_shelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/shelf"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_shelf_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:textSize="16sp"
+            tools:ignore="LabelFor,TextFields" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/req_info4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/required_info"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/view4"
+        app:layout_constraintStart_toStartOf="@id/view4"
+        app:layout_constraintTop_toTopOf="@id/view4" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10sp"
+        android:background="#F6FBFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view3">
+
+        <LinearLayout
+            android:id="@+id/spare_part_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="18sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/input_box_border_bg"
+            android:orientation="horizontal"
+            android:paddingStart="16sp"
+            android:paddingTop="0sp"
+            android:paddingEnd="16sp"
+            android:paddingBottom="0sp">
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/tv_spare_part"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/spare_part_name"
+                android:textSize="14sp" />
+
+            <!-- Edit text -->
+            <AutoCompleteTextView
+                android:id="@+id/actv_spare_part"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:completionThreshold="1"
+                android:dropDownHorizontalOffset="5dp"
+                android:dropDownVerticalOffset="5dp"
+                android:fontFamily="@font/dm_sans"
+                android:hint="@string/choose_spare_part"
+                android:focusable="false"
+                android:editable="false"
+                android:importantForAutofill="no"
+                android:clickable="true"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textSize="15sp"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tag_id_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18sp"
+            android:layout_marginTop="2sp"
+            android:layout_marginRight="18sp"
+            android:layout_marginBottom="2sp"
+            android:background="@drawable/input_box_border_bg"
+            android:orientation="horizontal"
+            android:paddingStart="16sp"
+            android:paddingTop="0sp"
+            android:paddingEnd="16sp"
+            android:paddingBottom="0sp">
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/tv_tag_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/tag_id"
+                android:textSize="14sp" />
+
+            <!-- Edit text -->
+            <EditText
+                android:id="@+id/et_tag_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:importantForAutofill="no"
+                android:textSize="15sp"
+                app:boxStrokeWidth="0.4dp"
+                android:hapticFeedbackEnabled="true"
+                tools:ignore="LabelFor,TextFields" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quantity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="18sp"
+            android:layout_marginBottom="2sp"
+            android:background="@drawable/input_box_border_bg"
+            android:orientation="horizontal"
+            android:paddingStart="16sp"
+            android:paddingTop="0sp"
+            android:paddingEnd="16sp"
+            android:paddingBottom="0sp">
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/quantity"
+                android:textSize="14sp" />
+
+            <!-- Edit text -->
+            <EditText
+                android:id="@+id/et_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:importantForAutofill="no"
+                android:textSize="15sp"
+                android:inputType="number"
+                app:boxStrokeWidth="0.4dp"
+                android:hapticFeedbackEnabled="true"
+                tools:ignore="LabelFor,TextFields" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/box_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="18sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/input_box_border_bg"
+            android:orientation="horizontal"
+            android:paddingStart="16sp"
+            android:visibility="gone"
+            android:paddingTop="0sp"
+            android:paddingEnd="16sp"
+            android:paddingBottom="0sp">
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/tv_box_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/box_name_optional"
+                android:textSize="14sp" />
+
+            <!-- Edit text -->
+            <EditText
+                android:id="@+id/et_box_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/dm_sans"
+                android:importantForAutofill="no"
+                android:textSize="14sp"
+                app:boxStrokeWidth="0.4dp"
+                tools:ignore="LabelFor,TextFields" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/inventory_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/condition"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toTopOf="@id/view2" />
+
+    <LinearLayout
+        android:id="@+id/inventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inventory_type">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/checkbox_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:spanCount="3"
+            app:stackFromEnd="true" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="#F6FBFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filters" />
+
+    <TextView
+        android:id="@+id/req_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/required_info"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/view3"
+        app:layout_constraintStart_toStartOf="@id/view3"
+        app:layout_constraintTop_toTopOf="@id/view3" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="25sp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventory">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_clear"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/dm_sans_medium"
+            android:paddingStart="35sp"
+            android:paddingEnd="35sp"
+            android:text="@string/clear"
+            android:textAllCaps="false"
+            android:textColor="#303030"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_apply_filters" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_part"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/apply_filter_btn_style"
+            android:fontFamily="@font/dm_sans_medium"
+            android:paddingStart="30sp"
+            android:paddingTop="15dp"
+            android:paddingEnd="30sp"
+            android:paddingBottom="15dp"
+            android:stateListAnimator="@null"
+            android:text="@string/add_part"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

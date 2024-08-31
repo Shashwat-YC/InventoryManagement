@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_pms_home_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:gravity="bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_pms_job_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:ellipsize="end"
+            android:fontFamily="@font/dm_sans"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:text="@string/item_name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6sp"
+            android:background="@drawable/pms_home_tag_bg"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_pms_item_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/dm_sans_medium"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:paddingStart="4sp"
+                android:paddingEnd="4sp"
+                android:text="@string/tag"
+                android:textColor="@color/skyblue"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pms_item_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="11dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/pic"
+            android:textColor="@color/light_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_pms_item_pic_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/value"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_pms_item_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="@string/date"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/light_dark"
+            android:textSize="12sp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pms_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="8sp"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/description"
+        android:textColor="@color/light_dark"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="7sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_machine_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="11dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/mid"
+            android:textColor="@color/light_dark"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_machine_uid_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="@string/value"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.4dp"
+        android:layout_marginTop="5sp"
+        android:background="@color/extra_light_dark" />
+
+</LinearLayout>

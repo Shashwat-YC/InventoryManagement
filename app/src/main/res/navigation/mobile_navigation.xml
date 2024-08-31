@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/pms">
+
+    <fragment
+        android:id="@+id/pms"
+        android:name="gg.rohan.narwhal.ui.PMSFragment"
+        android:label="@string/title_pms"
+        tools:layout="@layout/fragment_pms" />
+
+    <fragment
+        android:id="@+id/check_in"
+        android:name="gg.rohan.narwhal.ui.CheckInFragment"
+        android:label="@string/title_check_in"
+        tools:layout="@layout/fragment_check_in" />
+
+    <fragment
+        android:id="@+id/check_out"
+        android:name="gg.rohan.narwhal.ui.CheckOutFragment"
+        android:label="@string/title_check_out"
+        tools:layout="@layout/fragment_check_out" />
+
+    <fragment
+        android:id="@+id/inventory"
+        android:name="gg.rohan.narwhal.ui.InventoryFragment"
+        android:label="@string/title_inventory"
+        tools:layout="@layout/fragment_inventory" />
+
+</navigation>

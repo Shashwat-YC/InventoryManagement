@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_skyblue">#E3F3FF</color>
+    <color name="skyblue">#31A3FA</color>
+    <color name="dark">#424242</color>
+    <color name="light_dark">#666666</color>
+    <color name="extra_light_dark">#19000000</color>
+    <color name="light_dark_shadow_for_card">#0A000000</color>
+    <color name="light_page_bg">#F9F9F9</color>
+    <color name="status_planning">#0FABA6</color>
+    <color name="status_in_progress">#107FCA</color>
+    <color name="status_completed">#3ABB5D</color>
+    <color name="drop_down_divider">#D9D9D9</color>
+    <color name="pms_item_top_heading_bg">#F6FBFF</color>
+    <color name="fab_background_color">#E5E5E5</color>
+    <color name="fab_progress_color">#47AFFF</color>
+    <color name="fab_initial_text_color">#ABABAB</color>
+    <color name="colorProgress0">#E5E5E5</color>
+    <color name="colorProgress50">#8FCEFF</color>
+    <color name="colorProgress100">#47AFFF</color>
+    <color name="colorProgress0Start">#ABABAB</color>
+    <color name="colorProgress0End">#ABABAB</color>
+    <color name="colorProgress50Start">#47AFFF</color>
+    <color name="colorProgress50End">#8FCEFF</color>
+    <color name="colorProgress100Start">#72C2FF</color>
+    <color name="colorProgress100End">#72C2FF</color>
+
+    <color name="product_job_unfinished_status">#FF0505</color>
+    <color name="product_job_finished_status">#3ABB5D</color>
+    <color name="product_job_in_progress_status">#107FCA</color>
+    <color name="product_job_planning_status">#0FABA6</color>
+    <color name="trigger_bg_color">#E9F6FF</color>
+    <color name="trigger_text_color">#47AFFF</color>
+
+    <color name="pms_product_reconditioned_tag">#FF6702</color>
+    <color name="pms_product_reconditioned_tag_text">#FFFFFF</color>
+    <color name="pms_product_reconditioned_tag_bg">#FF6702</color>
+    <color name="pms_product_reconditioned_tag_bg_stroke">#29FF6701</color>
+
+    <color name="pms_product_new_tag_bg_stroke_color">#3D34A853</color>
+    <color name="pms_product_new_tag_bg">#E8FFEE</color>
+    <color name="pms_product_new_tag_text">#34A853</color>
+
+    <color name="divider_dot">#919090</color>
+    <color name="scanned_updated_box_bg">#F2FFF6</color>
+    <color name="scanned_updated_box_text">#34A853</color>
+    <color name="close_btn_bg">#F1F9FF</color>
+    <color name="inventory_home_item_text">#252528</color>
+    <color name="selected_chip_color">#0096FF</color>
+    <color name="unselected_chip_color">#FFFFFF</color>
+    <color name="rounded_divider_line">#3D000000</color>
+    <color name="fab_close_bg">#8F8F8F</color>
+    <color name="green_fab_bg">#05AE32</color>
+    <color name="input_border_color">#0A000000</color>
+    <color name="inv_floor_item_bg_color">#EDF7FF</color>
+
+    <color name="transparent">#00000000</color>
+
+
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pms"
+        android:enabled="true"
+        android:icon="@drawable/ic_tool"
+        android:title="PMS"/>
+    <item
+        android:id="@+id/check_in"
+        android:enabled="true"
+        android:icon="@drawable/ic_check_in"
+        android:title="Check in"/>
+    <item
+        android:id="@+id/check_out"
+        android:enabled="true"
+        android:icon="@drawable/ic_check_out"
+        android:title="Check out"/>
+    <item
+        android:id="@+id/inventory"
+        android:enabled="true"
+        android:icon="@drawable/ic_inventory"
+        android:title="Inventory"/>
+</menu>

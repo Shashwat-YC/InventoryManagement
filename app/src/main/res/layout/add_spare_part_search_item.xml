@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/pms_product_info_layout"
+    android:layout_marginTop="5sp"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/packet_container_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:layout_marginBottom="2sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:background="@color/fab_close_bg"
+        app:cardCornerRadius="6sp"
+        app:strokeColor="@color/light_dark_shadow_for_card"
+        app:strokeWidth="2sp">
+
+        <LinearLayout
+            android:id="@+id/packet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="9sp"
+            android:background="@color/white"
+            android:paddingBottom="9sp">
+
+            <TextView
+                android:id="@+id/tv_product_option_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="7sp"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="NO."
+                android:textColor="@color/light_dark"
+                android:textSize="11.5sp" />
+
+            <TextView
+                android:id="@+id/tv_product_option_id_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:fontFamily="@font/dm_sans_medium"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:text="@string/_0"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="7sp"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="@string/product_"
+                android:textColor="@color/light_dark"
+                android:textSize="11.5sp" />
+
+            <TextView
+                android:id="@+id/tv_product_name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="@string/n_a"
+                android:layout_marginEnd="7sp"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

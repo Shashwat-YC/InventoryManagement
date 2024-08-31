@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Narwahal" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/skyblue</item>
+        <item name="colorPrimaryVariant">@color/skyblue</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/skyblue</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+        <item name="itemRippleColor">@color/light_skyblue</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextAppearanceActive">@drawable/nav_item_color_state</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSurface">@color/dark</item>
+        <item name="colorOnSurfaceVariant">@color/dark</item>
+        <item name="colorPrimary">@color/skyblue</item>
+        <item name="colorPrimaryVariant">@color/skyblue</item>
+        <item name="colorOnPrimary">@color/skyblue</item>
+    </style>
+    <style name="Widget.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="shapeAppearance">
+            @style/ShapeAppearance.M3.Comp.NavigationBar.ActiveIndicator.Shape
+        </item>
+        <item name="android:color">@color/light_skyblue</item>
+    </style>
+    <style name="TranslucentDialog" parent="@android:style/Theme.DeviceDefault.Dialog.Alert" tools:targetApi="lollipop_mr1">
+        <item name="android:colorBackground">#0000</item>
+    </style>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <style name="CustomTabTextAppearance" parent="Widget.Material3.TabLayout">
+        <!-- Customize attributes such as text size, color, style, etc. -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+    <style name="CustomTextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <!-- Disable hint moving up on click -->
+        <item name="hintEnabled">false</item>
+
+    </style>
+</resources>

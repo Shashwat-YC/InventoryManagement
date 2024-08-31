@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/ll_inventory_add_part_first_items"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18sp"
+        android:layout_marginTop="19sp"
+        android:layout_marginEnd="60sp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/dm_sans_medium"
+            android:maxLength="14"
+            android:maxLines="1"
+            android:text="@string/product_name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mv_product_id_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16sp"
+                android:background="@color/pms_product_reconditioned_tag"
+                app:cardCornerRadius="4.5dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/pms_product_reconditioned_tag_bg_stroke"
+                app:strokeWidth="0.69dp">
+
+                <TextView
+                    android:id="@+id/tv_product_id_tag_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/dm_sans"
+                    android:maxLength="14"
+                    android:maxLines="1"
+                    android:padding="4sp"
+                    android:paddingStart="6sp"
+                    android:paddingEnd="6sp"
+                    android:text="@string/tag"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tv_product_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="12sp"
+                android:ellipsize="end"
+                android:fontFamily="@font/dm_sans"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:text="@string/product"
+                android:textColor="@color/light_dark"
+                android:textSize="13.72sp" />
+
+            <TextView
+                android:id="@+id/tv_pms_product_rob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20sp"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/qty"
+                android:textColor="@color/light_dark"
+                android:textSize="13.5sp" />
+
+            <TextView
+                android:id="@+id/tv_product_qty_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="@string/_0"
+                android:textColor="@color/black"
+                android:textSize="15.4sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.4dp"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="0sp"
+        android:background="@color/extra_light_dark" />
+</LinearLayout>

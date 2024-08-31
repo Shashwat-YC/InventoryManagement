@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_inv_second_home_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_inventory_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="18sp"
+        android:layout_marginEnd="15sp"
+        android:fontFamily="@font/dm_sans"
+        android:text="@string/product"
+        android:textColor="@color/inventory_home_item_text"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/product_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="18sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tv_product_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/floor"
+                android:textColor="@color/light_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_product_floor_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/_0"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_product_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/room"
+                android:textColor="@color/light_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_product_room_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/_0"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_product_rack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/rack"
+                android:textColor="@color/light_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_product_rack_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:fontFamily="@font/dm_sans"
+                android:text="@string/_0"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.4dp"
+        android:layout_marginTop="5sp"
+        android:background="@color/extra_light_dark" />
+
+</LinearLayout>
